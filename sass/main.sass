@@ -3,6 +3,7 @@ $active-color: #009adf
 $dark: #131313
 $white: #ffffff
 $footer-text: #666666
+$inn: rgba($dark, 0.5)
 
 html
     font-size: 10px
@@ -222,8 +223,27 @@ body
                     text-align: center
                     line-height: 30px
                     border-radius: 50%
-
-
+/* Секция organization */
+.organization
+    &-card
+        background-color: $white
+        padding: 25px 30px
+        min-height: 42rem
+        margin-bottom: 30px
+        transition: all 0.2s
+        &:hover
+         box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1)   
+        a
+            display: block
+            text-transform: uppercase
+            text-decoration: none
+            margin-bottom: 20px
+        small
+            display: block
+            color: $inn
+            line-height: 1.5
+        p
+            line-height: 22px
 @import "media"                    
             
                     
