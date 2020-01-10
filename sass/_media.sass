@@ -1,0 +1,71 @@
+@media (max-width: 768px)
+    html
+        font-size: 5px
+    .top-nav
+        &_btn
+            display: block
+        &_menu
+            flex-direction: column
+            display: none
+            li
+                line-height: 2
+                a
+                    &::after
+                        display: none
+            &__active
+                display: flex
+    .left-sidebar
+        &_btn
+            display: block
+        &_menu
+            display: none
+        &__active
+            display: block
+        &_object
+            display: none
+    .direction
+        display: none
+    .footer
+        &-copyright
+            text-align: center
+        small
+            display: block
+            margin:  auto
+        &-contacts
+            text-align: left
+@media (min-width: 768px) and (max-width: 992px)
+    html
+        font-size: 5px
+    .top-nav
+        &_btn
+            display: block
+        &_menu
+            display: none
+            &__active
+                display: flex
+                margin-bottom: 0 
+                justify-content: space-around
+                li
+                    margin-right: 0px
+                    line-height: 2
+                    a
+                        &::after
+                            display: none   
+    .left-sidebar
+        &_btn
+            display: block
+        &_menu
+            display: none
+        &__active
+            display: block
+        &_object
+            display: none   
+    .footer
+        &-contacts
+            text-align: left 
+@media (min-width: 992px) and (max-width: 1199px)
+    .top-nav_menu
+        display: flex
+        justify-content: space-between
+        li 
+            margin: 0                                                    

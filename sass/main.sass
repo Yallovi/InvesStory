@@ -5,13 +5,15 @@ $white: #ffffff
 $footer-text: #666666
 
 html
-    font-size: 14px 
-
+    font-size: 10px
+img 
+    max-width: 100% 
 body 
     background-color: $body-bg
     color: $dark
     font-family: 'Roboto', sans-serif
     margin: 0
+    font-size: 14px
     a
         color: $active-color
     .btn
@@ -31,31 +33,64 @@ body
 .top-nav
     background-color: $white
     padding: 15px
+    position: relative
+    margin-top: 40px
+    &_btn
+        display: none
+        width: 30px
+        height: 30px
+        background-color: transparent
+        border: none
+        font-size: 18px
+        position: absolute
+        right: 15px
+        top: -50px
+        &:hover
+            cursor: pointer
     &_menu
         list-style: none
         padding: 0
         display: flex
-    li
-        margin-right: 45px
-    a
-        text-transform: uppercase
-        text-decoration: none
-        color: $dark
-        font-weight: 700
-        &::after
-            content: ''
-            display: block
-            width: 100%
-            height: 2px
-            background-color: $active-color
-            transform: translateY(37px) scale(0)
-            transition: all 0.2s
-        &:hover
-            text-decoration
-            &::after
-                transform: translateY(37px) scale(1)
+        li
+            margin-right: 45px
+            a
+                text-transform: uppercase
+                text-decoration: none
+                color: $dark
+                font-weight: 700
+                &::after
+                    content: ''
+                    display: block
+                    width: 100%
+                    height: 2px
+                    background-color: $active-color
+                    transform: translateY(37px) scale(0)
+                    transition: all 0.2s
+                &:hover
+                    text-decoration
+                    &::after
+                        transform: translateY(37px) scale(1)
 .left-sidebar
-    margin-top: 40px
+    margin-top: 4rem
+    &_btn
+        display: none
+        background-color: $white
+        padding: 15px
+        position: relative
+        &:hover
+            cursor: pointer  
+        &::after
+            display: inline-block
+            content: ''
+            width: 15px
+            height: 15px
+            border-bottom: 2px solid $dark
+            border-right: 2px solid $dark
+            position: absolute
+            top: 50%
+            margin-top: -10px
+            right: 15px
+            transform: rotate(45deg)   
     &_menu
         background-color: $white
         list-style: none
@@ -92,6 +127,7 @@ body
                 color: $dark
 .content
     margin-top: 40px
+    margin-bottom: 76px
     h2
         font-size: 24px
         font-weight: 700
@@ -157,7 +193,38 @@ body
                     &:hover
                         background-color: rgba($white,0.9)
                         color: $dark
-                    
+/* Секция team */                        
+.team
+    text-align: center
+    padding-top: 35px 
+/* Секция contacts */
+.contacts
+    font-size: 16px
+    &-img
+        margin-right: 15px
+        vertical-align: middle
+    &-adress
+        display: block
+        line-height: 2
+    &-social_links
+        ul
+            list-style: none
+            padding: 0
+            li
+                display: inline-block
+                a
+                    display: inline-block
+                    margin-right: 15px
+                    width: 30px
+                    height: 30px
+                    background-color: $active-color
+                    color: $white
+                    text-align: center
+                    line-height: 30px
+                    border-radius: 50%
+
+
+@import "media"                    
             
                     
 
