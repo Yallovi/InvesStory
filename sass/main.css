@@ -472,25 +472,26 @@ body .btn-primary:hover {
   background-color: #ffffff;
 }
 
-.calc-total {
+.calc-total, .calc-monthly {
   display: inline-block;
-  padding: 14px 25px;
+  padding: 10px;
   background-color: #ffffff;
   margin-top: 20px;
   margin-right: 40px;
 }
 
-.calc-total strong {
+.calc-total strong, .calc-monthly strong {
   font-size: 18px;
   color: #009adf;
 }
 
-.calc-total small {
+.calc-total small, .calc-monthly small {
   font-size: 10px;
   font-weight: 400;
 }
 
 .calc-monthly {
+  background-color: transparent;
   display: inline-block;
   text-align: center;
 }
@@ -501,6 +502,41 @@ body .btn-primary:hover {
 
 .calc-monthly small {
   font-size: 10px;
+}
+
+/* Страница category */
+.object-card {
+  background-color: #ffffff;
+}
+
+.object-card_text {
+  padding: 30px;
+}
+
+.object-card_title {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.object-card_price {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #009adf;
+  text-align: center;
+}
+
+.object-card_btn {
+  display: block !important;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.object-card_more {
+  display: block;
+  text-align: center;
+  color: #131313;
 }
 
 @media (max-width: 768px) {
