@@ -246,6 +246,9 @@ body
             line-height: 22px
 /* Секция calc */
 .calc
+    h4
+        margin-top: 0
+        margin-bottom: 30px
     &-radio
         flex-basis: 50%
         &:last-child
@@ -303,8 +306,38 @@ body
             position: absolute
             left: -12px
             top: 50%
-            margin-top: -6px
-               
+            -margin-top: 6px
+    &-summ
+        &_invest
+            margin-top: 30px
+            &_label
+                margin-right: 10px 
+            &_num
+                display: inline-block
+                padding: 10px 48px
+                font-size: 18px
+                background-color: $white            
+    &-total, &-monthly
+        display: inline-block
+        padding: 10px 
+        background-color: $white
+        margin-top: 20px
+        margin-right: 40px
+        strong
+            font-size: 18px
+            color: $active-color
+        small
+            font-size: 10px
+            font-weight: 400
+    &-monthly
+        background-color: transparent
+        display: inline-block
+        text-align: center
+        strong
+            font-size: 18px
+        small
+            font-size: 10px
+
 
 @import "media"                    
             

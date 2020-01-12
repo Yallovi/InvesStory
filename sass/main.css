@@ -363,6 +363,11 @@ body .btn-primary:hover {
 }
 
 /* Секция calc */
+.calc h4 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .calc-radio {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -449,7 +454,53 @@ body .btn-primary:hover {
   position: absolute;
   left: -12px;
   top: 50%;
-  margin-top: -6px;
+  -margin-top: 6px;
+}
+
+.calc-summ_invest {
+  margin-top: 30px;
+}
+
+.calc-summ_invest_label {
+  margin-right: 10px;
+}
+
+.calc-summ_invest_num {
+  display: inline-block;
+  padding: 10px 48px;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+
+.calc-total {
+  display: inline-block;
+  padding: 14px 25px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.calc-total strong {
+  font-size: 18px;
+  color: #009adf;
+}
+
+.calc-total small {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.calc-monthly {
+  display: inline-block;
+  text-align: center;
+}
+
+.calc-monthly strong {
+  font-size: 18px;
+}
+
+.calc-monthly small {
+  font-size: 10px;
 }
 
 @media (max-width: 768px) {
