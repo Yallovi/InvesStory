@@ -361,7 +361,60 @@ body
             display: block
             text-align: center
             color: $dark    
-
+    &-page
+        &_galery
+            float: right
+.modal
+    display: none
+    background-color: rgba(0, 0, 0, 0.4)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    &-content
+        background-color: $white
+        position: relative
+        width: 100%
+        max-width: 370px
+        padding: 30px 50px
+        margin: 50px auto
+        text-align: center
+        box-shadow: 0 12px 24px rgba(0, 0, 1, 0.18)
+        h4
+            margin-top: 0
+            font-size: 18px
+            color: $active-color
+        p
+            font-size: 12px
+            margin-top: 0
+    .close
+        position: absolute
+        top: 15px
+        right: 15px
+        width: 10px
+        height: 10px
+        line-height: 1
+        font-size: 20px
+        opacity: 0.2
+        &:hover
+            cursor: pointer
+    &-form
+        margin-top: 37px 
+        input
+            display: block
+            width: 100%
+            border: 1px solid rgba($dark, 0.15)
+            padding: 20px
+            font-size: 15px
+            border-radius: 4px
+            margin-bottom: 10px
+            &:focus
+                outline: none
+        &_btn
+            display: block !important
+            width: 100%
+            margin-bottom: 20px
 
 @import "media"                    
             
